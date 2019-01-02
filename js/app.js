@@ -24,12 +24,14 @@ $(document).ready(function(){
       items:1,
   });
 
+  /* Slider de cada marca (OFERTAS ESPECIALES) */
   $('.box-primary-body .owl-carousel.slider').owlCarousel({
     loop:false,
     margin: 20,
     nav:true,
     dots:false,
     items: 1,
+    lazyLoad: true,
     responsive : {
       768 : {
         items : 2
@@ -40,12 +42,14 @@ $(document).ready(function(){
     }
   });
 
+  /* Slider de cada auto publicado en la HOME */
   $('.item .owl-carousel').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
     dots:true,
     items:1,
+    lazyLoad: true
   });
 
   /* Slider marcas (OFERTAS ESPECIALES) */
