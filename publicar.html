@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Publicar | elauto.com</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="mobile-inner-header d-xl-none">
+        <div class="logo-mobile">
+          <a href="#">
+            <img src="img/logo-header-chico.png" alt="logo" class="img-fluid pt-4 pl-3">
+          </a>
+        </div>
+        <div class="mobile-inner-header-icon mobile-inner-header-icon-out">
+          <span></span><span></span>
+        </div>
+      </div>
+      <div class="mobile-inner-nav">
+        <a href="#">Inicio</a>
+        <a href="#">Promociones especiales</a>
+        <a href="#">Ventas corporativas</a>
+        <a href="#">Planes de ahorro</a>
+        <a href="#">Modelos</a>
+        <a href="#">Contacto</a>
+        <a href="#">Acceso clientes</a>
+      </div>
+
+      <div class="container d-none d-xl-block">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <img src="img/logo-header-chico.png" alt="logo" class="h-logo">
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto p-0">
+                <p class="mb-0">snob@arnet.com.ar</p>
+              </div>
+              <div class="col-auto">
+                <img src="img/avatar.png" style="width: 100%; max-width:54px;"alt="avatar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid menu d-none d-xl-block">
+        <div class="row">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto"><a href="#" class="text-white">Inicio</a></div>
+              <div class="col-auto"><a href="#" class="text-white">Promociones especiales</a></div>
+              <div class="col-auto"><a href="#" class="text-white">Ventas corporativas</a></div>
+              <div class="col-auto"><a href="#" class="text-white">Planes de ahorro</a></div>
+              <div class="col-auto"><a href="#" class="text-white">Modelos</a></div>
+              <div class="col-auto"><a href="#" class="text-white">Contacto</a></div>
+              <div class="col-auto col-md-2 text-center"><a href="#" class="text-light-blue">Acceso clientes</a></div>
+              <div class="col-auto pl-1 pr-1">
+                <a href="#">
+                  <span class="fa-stack fa-2x" style="font-size:14px;">
+                    <i class="fas fa-circle fa-stack-2x" style="color:#009be4;"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <a href="#">
+                    <span class="fa-stack fa-2x" style="font-size:14px;">
+                      <i class="fas fa-circle fa-stack-2x" style="color:#009be4;"></i>
+                      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid bg-primary">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1>Vendé tu auto</h1>
+              <ul class="nav nav-pills nav-fill" role="tablist" id="tabs">
+                <li class="nav-item">
+                  <a class="nav-link" id="vehiculos-tab" href="#vehiculos" role="tab" aria-controls="vehiculos" aria-selected="true"><span class="badge badge-light">1</span> Elegí el vehiculo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="datos-tab" href="#datos" role="tab" aria-controls="datos" aria-selected="false"><span class="badge badge-light">2</span> Completá los datos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pago-tab" href="#pago" role="tab" aria-controls="pago" aria-selected="false"><span class="badge badge-light">3</span> Resumen final y pago</a>
+                </li>
+                <!-- INVISIBLES-->
+                <li class="nav-item d-none">
+                  <a class="nav-link" id="confirmar-tab" data-toggle="pill" href="#confirmar" role="tab" aria-controls="confirmar" aria-selected="false">invisible</a>
+                </li>
+                <li class="nav-item d-none">
+                  <a class="nav-link" id="elegir-tab" data-toggle="pill" href="#elegir" role="tab" aria-controls="elegir" aria-selected="false">invisible</a>
+                </li>
+                <!-- INVISIBLES -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="pt-4 pb-4 bg-white">
+      <div class="container-fluid container-max">
+        <div class="row justify-content-center">
+          <div class="col">
+
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="elegir" role="tabpanel" aria-labelledby="elegir-tab">
+                <div class="row mt-4 mb-5 justify-content-center">
+                  <div class="col-12">
+                    <h3 class="mt-5 mb-5">Tipo de publicación</h3>
+                  </div>
+                  <div class="col-sm-3 mb-4 mb-lg-0">
+                    <button type="button" class="btn btn-lg btn-block" onclick="$('#tabs').show('200'); $('#vehiculos-tab').tab('show'); window.scrollTo(0, 0);">Publicar un Usado</button>
+                  </div>
+                  <div class="col-sm-3 mb-4 mb-lg-0">
+                    <a href="#" class="btn btn-lg btn-block">Publicar un Plan de Ahorro</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="vehiculos" role="tabpanel" aria-labelledby="vehiculos-tab">
+                <div class="row mt-4">
+                  <div class="col">
+                    <p class="lead mb-1">Estás publicando un:</p>
+                    <h4 class="mb-5">Usado</h4>
+                  </div>
+                  <div class="col-lg-3 mb-4">
+                    <h5>Seleccioná marca</h5>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Buscá por marca" >
+                      <div class="input-group-append">
+                        <a href="#" class="p-2 pr-3"><i class="fas fa-search"></i></a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <select multiple class="form-control" size="10">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 mb-4">
+                    <h5>Seleccioná modelo</h5>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Buscá por modelo" >
+                      <div class="input-group-append">
+                        <a href="#" class="p-2 pr-3"><i class="fas fa-search"></i></a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <select multiple class="form-control" size="10">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 mb-4">
+                    <h5>Seleccioná versión</h5>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Buscá por versión" >
+                      <div class="input-group-append">
+                        <a href="#" class="p-2 pr-3"><i class="fas fa-search"></i></a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <select multiple class="form-control" size="10">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col order-2 order-lg-1 col-lg-3">
+                    <button type="button" class="btn btn-info mb-3 mb-lg-0" onclick="$('#elegir-tab').tab('show'); window.scrollTo(0, 0);">Volver a elegir</button>
+                  </div>
+                  <div class="col-12 order-1 order-lg-2 col-lg">
+                    <p class="lead"><b class="text-primary">Volkswagen Up 5P 1.0 high up! MT5 (75cv)</b></p>
+                  </div>
+                  <div class="col-auto order-3">
+                    <button type="button" class="btn btn-primary mb-3 mb-lg-0" onclick="$('#datos-tab').tab('show'); window.scrollTo(0, 0);">Continuar</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TAB 2-->
+              <div class="tab-pane fade" id="datos" role="tabpanel" aria-labelledby="datos-tab">
+                <div class="row">
+                  <div class="col">
+                    <p class="lead text-center"><b class="text-primary">Volkswagen Up 5P 1.0 high up! MT5 (75cv)</b></p>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row m-4">
+                  <div class="col-12 text-center">
+                    <p class="lead">
+                      Subí las fotos de tu auto
+                    </p>
+                    <a href="#" class="btn btn-primary">Cargar fotos</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <hr>
+                    <p class="lead text-center">
+                      Ingresá los datos
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-lg-4">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option>$</option>
+                            <option>USD</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="* Precio" style="max-width: 175px;">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label"><small>Precio a consultar</small></label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="" disabled selected>Año</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="" disabled selected>Localidad</option>
+                            <option>$</option>
+                            <option>USD</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="" disabled selected>Tipo de combustible</option>
+                            <option>Nafta</option>
+                            <option>Diesel</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="* Kilometraje">
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p class="pt-lg-2">
+                          * Campos obligatorios
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="" disabled selected>Color</option>
+                            <option>Negro</option>
+                            <option>Blanco</option>
+                            <option>Azul</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option value="" disabled selected>Forma de pago</option>
+                            <option>Efectivo</option>
+                            <option>Transferencia bancaria</option>
+                            <option>Cheque</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4" placeholder="Descripción / Comentario"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12">
+                    <p class="lead text-center">
+                      Equipamiento
+                    </p>
+                    <div class="accordion" id="accordionEquipamiento">
+                      <div class="card">
+                        <div class="card-header" id="headingSeguridad">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseSeguridad" aria-expanded="false" aria-controls="collapseSeguridad">
+                              <b>Seguridad</b> <i class="ml-4 fas fa-chevron-right"></i>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseSeguridad" class="collapse" aria-labelledby="headingSeguridad" data-parent="#accordionEquipamiento">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingConfort">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseConfort" aria-expanded="true" aria-controls="collapseConfort">
+                              <b>Confort</b> <i class="ml-4 fas fa-chevron-right"></i>
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseConfort" class="collapse show" aria-labelledby="headingConfort" data-parent="#accordionEquipamiento">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-12 col-lg-4">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl1">
+                                  <label class="custom-control-label" for="customControl1">Aire acondicionado</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl2">
+                                  <label class="custom-control-label" for="customControl2">Apertura remota de baúl</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl3">
+                                  <label class="custom-control-label" for="customControl3">Asiento acompañante regulable en altura</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl4">
+                                  <label class="custom-control-label" for="customControl4">Asiento conductor con ajuste eléctrico y memoria</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl5">
+                                  <label class="custom-control-label" for="customControl5">Asientos delanteros calefaccionados</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl6">
+                                  <label class="custom-control-label" for="customControl6">Climatizador automático</label>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl7">
+                                  <label class="custom-control-label" for="customControl7">Alzacristales eléctricos delanteros</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl8">
+                                  <label class="custom-control-label" for="customControl8">Apoyabrazos central delantero</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl9">
+                                  <label class="custom-control-label" for="customControl9">Asiento conductor regulable en altura</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl10">
+                                  <label class="custom-control-label" for="customControl10">Asientos traseros rebatibles</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl11">
+                                  <label class="custom-control-label" for="customControl11">Comando satelital de equipo de audio</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl12">
+                                  <label class="custom-control-label" for="customControl12">Computadora de a bordo</label>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl13">
+                                  <label class="custom-control-label" for="customControl13">Apoyabrazos central trasero</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl14">
+                                  <label class="custom-control-label" for="customControl14">Cierre centralizado</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl15">
+                                  <label class="custom-control-label" for="customControl15">Radio AM/FM con pasacassette</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl16">
+                                  <label class="custom-control-label" for="customControl16">Reproductor de CD</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl17">
+                                  <label class="custom-control-label" for="customControl17">Volante regulable en altura</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                  <input type="checkbox" class="custom-control-input" id="customControl18">
+                                  <label class="custom-control-label" for="customControl18">Tapizados en cuero</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingExterior">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseExterior" aria-expanded="false" aria-controls="collapseExterior">
+                              <b>Exterior</b> <i class="ml-4 fas fa-chevron-right"></i>
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseExterior" class="collapse" aria-labelledby="headingExterior" data-parent="#accordionEquipamiento">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingEspeciales">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseEspeciales" aria-expanded="false" aria-controls="collapseEspeciales">
+                              <b>Especiales</b> <i class="ml-4 fas fa-chevron-right"></i>
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseEspeciales" class="collapse" aria-labelledby="headingEspeciales" data-parent="#accordionEquipamiento">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-md btn-info mb-4 mb-lg-0" onclick="$('#vehiculos-tab').tab('show'); window.scrollTo(0, 0);">Volver</button>
+                  </div>
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-md btn-primary mb-4 mb-lg-0" onclick="$('#pago-tab').tab('show'); window.scrollTo(0, 0);">Continuar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="lead text-center">
+                      Estás publicando: <br>
+                      <b class="text-primary">Volkswagen Up 5P 1.0 high up! MT5 (75cv)</b><br>
+                      <b class="text-info">Usado</b>
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="col-12">
+                    <p class="lead text-center">
+                      <b>Elegí un plan para publicar</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card mb-5">
+                      <div class="card-body text-center pb-2">
+                        <h5 class="card-title">Clásico</h5>
+                        <div class="progress">
+                          <span class="active"></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <p class="card-text">Publicación de exposición standard. <br><b>30 días.</b> <br>Contactos ilimitados</p>
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-6 col-lg-auto">
+                            <p class="price mb-0"><span>$</span>150</p>
+                          </div>
+                          <div class="col-auto">
+                            <button type="button" class="btn btn-md btn-blue" onclick="$('#confirmar-tab').tab('show'); window.scrollTo(0, 0);">Publicar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card mb-5">
+                      <div class="card-body text-center pb-2">
+                        <h5 class="card-title">Premium</h5>
+                        <div class="progress">
+                          <span class="active"></span>
+                          <span class="active"></span>
+                          <span></span>
+                        </div>
+                        <p class="card-text">Publicación de exposición alta. <br><b>60 días.</b> <br>Contactos ilimitados</p>
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-6 col-lg-auto">
+                            <p class="price mb-0"><span>$</span>250</p>
+                          </div>
+                          <div class="col-auto">
+                            <button type="button" class="btn btn-md btn-blue" onclick="$('#confirmar-tab').tab('show'); window.scrollTo(0, 0);">Publicar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card mb-5">
+                      <div class="card-body text-center pb-2">
+                        <h5 class="card-title">Súper Premium</h5>
+                        <div class="progress">
+                          <span class="active"></span>
+                          <span class="active"></span>
+                          <span class="active"></span>
+                        </div>
+                        <p class="card-text">Publicación de exposición máxima. <br><b>90 días.</b> <br>Contactos ilimitados</p>
+                        <div class="row align-items-center justify-content-between">
+                          <div class="col-6 col-lg-auto">
+                            <p class="price mb-0"><span>$</span>400</p>
+                          </div>
+                          <div class="col-auto">
+                            <button type="button" class="btn btn-md btn-blue" onclick="$('#confirmar-tab').tab('show'); $('#pago-tab').addClass('active'); window.scrollTo(0, 0);">Publicar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-md btn-secondary mb-4 mb-lg-0" onclick="$('#vehiculos-tab').tab('show')">Volver</button>
+                  </div>
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-md btn-secondary mb-4 mb-lg-0" onclick="$('#pago-tab').tab('show')">Cancelar</button>
+                  </div>
+                  <div class="col-12 mt-4 text-center">
+                    <p><small>La renovación ilimitada del aviso debe cumplir con los plazos establecidos en los <a href="#">terminos y condiciones.</a></small></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="confirmar" role="tabpanel" aria-labelledby="confirmar-tab">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="lead text-center" style="font-size: 20px;">
+                      Tipo de publicación: <br>
+                      <b class="text-primary" style="font-size: 30px;">Plan Clásico</b><br>
+                      <b class="text-info" style="font-size: 30px;">$150</b>
+                    </p>
+                    <hr>
+                  </div>
+                  <div class="col-12 text-center pt-3 pb-3">
+                    <p class="lead pb-1">
+                      <b>Podrás pagar en efectivo o con tarjeta de crédito:</b>
+                    </p>
+                    <button type="button" class="btn btn-md btn-primary">Pagar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="container-fluid bg-dark">
+      <div class="row">
+        <div class="container">
+          <div class="row text-center justify-content-center text-lg-left justify-content-lg-start align-items-center">
+            <div class="col-12 col-lg-2 col-xl-4 mb-4 mb-lg-0">
+              <img src="img/logo-footer-chico.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-auto"><a href="#">Inicio</a></div>
+            <div class="col-auto"><a href="#">Promociones especiales</a></div>
+            <div class="col-auto"><a href="#">Ventas corporativas</a></div>
+            <div class="col-auto"><a href="#">Planes de ahorro</a></div>
+            <div class="col-auto"><a href="#">Modelos</a></div>
+            <div class="col-auto"><a href="#">Contacto</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      jQuery(function ($){
+        $('#tabs').hide();
+      });
+    </script>
+  </body>
+</html>
