@@ -56,6 +56,7 @@ $(document).ready(function(){
   $('.owl-marcas').owlCarousel({
     loop:false,
     center: true,
+    URLhashListener:true,
     autoplay: false,
     margin:4,
     nav:false,
@@ -68,7 +69,6 @@ $(document).ready(function(){
       },
       1200 : {
           items : 6,
-          loop: false,
       }
     }
   });
@@ -94,5 +94,16 @@ $(document).ready(function(){
 
   });
   /* FIN Slider marcas (OFERTAS ESPECIALES) */
+
+  // FILTRADO EN SEARCH
+  var sidebar = $('.sidebar');
+  $('#btn-filtrar').click(function() {
+
+    if(sidebar.hasClass('show')){
+      sidebar.removeClass('show');
+    }else{
+      sidebar.addClass('show');
+    }
+  });
 
 });
