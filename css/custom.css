@@ -2010,6 +2010,10 @@ footer a:focus{
   #btn-filtrar{
     background-color: #80b034;
   }
+  .publicados .btn{
+    display: block;
+    width: 100%;
+  }
 }
 @media (max-width: 600px){
   #main-slider .box{
