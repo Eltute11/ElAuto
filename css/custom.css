@@ -1545,9 +1545,6 @@ color: #000;
   left: 0;
   right: 0;
 }
-.thumb .item img{
-  height: 212px !important;
-}
 .item {
   position: relative;
   overflow: hidden;
@@ -1557,7 +1554,7 @@ color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 212px !important;
   object-fit: cover;
   object-position: center;
   -webkit-transform: translate(0,0);
@@ -1566,6 +1563,11 @@ color: #000;
   -ms-transform: translate(0,0);
   transform: translate(0,0);
   width: 100%;
+}
+.avatarImg {
+  width: 100%;
+  max-width: 50px;
+  max-height: 38px;
 }
 .thumb .owl-dots {
   counter-reset: slides-num;
@@ -2021,6 +2023,9 @@ footer a:focus{
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     font-size: 10px;
+  }
+  .chat .chat-body > div{
+    max-height: unset;
   }
 }
 @media (max-width: 600px){
