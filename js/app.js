@@ -18,7 +18,9 @@ $(document).ready(function(){
    // MOBILE
    var ancho = $(window).width();
    if(ancho <= 1024){
-     $("[data-toggle='tooltip']").tooltip('disable');
+    setTimeout(function() {
+      $("[data-toggle='tooltip']").tooltip('disable');
+    }, 2000);
    }
 	
   // Single slider
