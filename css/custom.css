@@ -1404,10 +1404,10 @@ color: #000;
   -ms-filter: grayscale(100%);
   filter: grayscale(100%); 
 }
-.title .owl-marcas .focus-active{
+.title .owl-marcas .center .item{
   opacity: 1;
 }
-.title .owl-marcas .focus-active img{
+.title .owl-marcas .center .item img{
   -webkit-filter: none;
   -moz-filter: none;
   -o-filter: none;
@@ -1546,7 +1546,7 @@ color: #000;
   right: 0;
 }
 .thumb .item img{
-  max-height: 212px;
+  height: 212px !important;
 }
 .item {
   position: relative;
