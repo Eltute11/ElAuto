@@ -14,6 +14,12 @@ $(window).load(function () {
 
 
 $(document).ready(function(){
+
+   // MOBILE
+   var ancho = $(window).width();
+   if(ancho <= 1024){
+     $("[data-toggle='tooltip']").tooltip('disable');
+   }
 	
   // Single slider
   $('.owl-carousel.default').owlCarousel({
